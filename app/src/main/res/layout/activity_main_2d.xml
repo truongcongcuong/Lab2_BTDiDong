@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9982C5"
+    tools:context=".MainActivity_2d">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="378dp"
+        android:layout_height="675dp"
+        android:background="@drawable/shape_caculator"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="165dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="PASSWORD\n GENERATOR"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/textViewOut"
+        android:layout_width="322dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:background="#3F3453"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:text="Password length"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOut"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewOut"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOut" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Include special symbol"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Include number"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Include upcase letters"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView30"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Include lower case letters"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <CheckBox
+        android:id="@+id/checkBoxnumber"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView28"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <Button
+        android:id="@+id/buttonAction"
+        android:layout_width="297dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="GENERATE PASSWORD"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
